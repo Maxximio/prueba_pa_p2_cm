@@ -1,21 +1,24 @@
 package com.example.demo.service;
 
+import java.math.BigDecimal;
+
 import com.example.demo.model.Matricula;
 
 public interface IMatriculaService {
 
 	// crear
-	public void insertarService(Matricula e);
+	//public void insertarService(Matricula e);
 
 	// read
-	public Matricula buscarService(String numero);
+	//public Matricula buscarService(String numero);
 
 	// update
-	public void actualizarService(Matricula e);
+	//public void actualizarService(Matricula e);
 
 	// delete
-	public void eliminarService(String numero);
+	//public void eliminarService(String numero);
 
-	void realizarMatricula(String cedula, String placa);
+	//void realizarMatricula(String cedula, String placa);
 
+	public BigDecimal calcular(BigDecimal precio);
 }

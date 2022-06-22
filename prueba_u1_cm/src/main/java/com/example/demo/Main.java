@@ -15,6 +15,7 @@ import com.example.demo.model.Propietario;
 import com.example.demo.model.Matricula;
 import com.example.demo.service.IVehiculoService;
 import com.example.demo.service.IPropietarioService;
+import com.example.demo.service.IMatriculaGestorService;
 import com.example.demo.service.IMatriculaService;
 
 @SpringBootApplication
@@ -27,7 +28,7 @@ public class Main implements CommandLineRunner{
 	private IPropietarioService propietarioService;
 	
 	@Autowired
-	private IMatriculaService matriService;
+	private IMatriculaGestorService gestorService;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Main.class, args);
@@ -65,7 +66,7 @@ public class Main implements CommandLineRunner{
 		
 		//realiza matricula
 		System.out.println("###############################################################");
-		this.matriService.realizarMatricula("456345345", "1233521");
+		this.gestorService.generar("456345345", "1233521");
 		
 	}
 }
